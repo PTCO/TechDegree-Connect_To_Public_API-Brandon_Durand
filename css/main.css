@@ -1,0 +1,119 @@
+*{
+    font-size: 24px;
+}
+
+#Employees, .Employee, main, .Employee span, body, #Employee_Modal ,#Employee_Modal div:first-child{
+    display: flex;
+}
+
+main, .Employee span, #Employee_Modal div:first-child{
+    flex-direction: column;
+}
+body{
+    justify-content: center;
+    margin: 0;
+}
+main{
+    position: relative;
+}
+
+h2, h1, p{
+    margin:  0;
+}
+h1{
+    margin: .5em 0 .5em 1.25em;
+    padding: .35em;
+    width: fit-content;
+    color: #fff;
+    text-shadow: 2px 3px #111;
+    background: rgb(232, 52, 52);
+}
+h2, h1{
+    font-family: spicy rice;
+}
+
+h2{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+p{
+    font-size: .8em;
+    font-family: cursive, sans-serif;
+    color: rgb(176, 175, 175)
+}
+
+
+#Employees{
+    margin: 0 auto;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Employee_Modal div:first-child, .Employee{
+    border: 2px solid rgb(232, 52, 52);
+    border-radius: 5px;
+}
+#Employee_Modal div:first-child,
+#Employee_Modal {
+    align-items: center;
+}
+#Employee_Modal{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#Employee_Modal div:first-child > div{
+    margin-top: auto;
+}
+#Employee_Modal div:first-child{
+    background: white;
+    opacity: 1 !important;
+    padding: .5em 0 1em 0;
+    width: 17em;
+    height: 18em;
+    z-index: 999;
+}
+#Employee_Modal img{
+    width: 6em;
+    height: 6em;
+    margin-bottom: .6em;
+    border-radius: 50%;
+}
+#Employee_Modal button{
+    background: none;
+    border-color: rgb(176, 175, 175);
+    border-radius: 5px;
+    align-self: flex-end;
+    color: white;
+    margin-right: .5em;
+    background: rgb(232, 52, 52);
+}
+
+.Employee{
+    align-items: center;
+    margin: .5em;
+    flex: 1;
+    height: 5em;
+    padding: .25em 2em .25em .75em;
+}
+
+.Employee span{
+    margin-left: .75em;
+}
+
+.Employee img {
+    border: 2px solid gray;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+}
+
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    opacity: .7;
+}
