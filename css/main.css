@@ -2,11 +2,11 @@
     font-size: 24px;
 }
 
-#Employees, .Employee, main, .Employee span, body, #Employee_Modal ,#Employee_Modal div:first-child{
+main span, #Employees, .Employee, main, .Employee span, body, #Employee_Modal ,#Employee_Modal div:first-child, #Employee_Modal div:last-child{
     display: flex;
 }
 
-main, .Employee span, #Employee_Modal div:first-child{
+main, .Employee span, #Employee_Modal div:first-child, #Employee_Modal div:last-child{
     flex-direction: column;
 }
 body{
@@ -42,6 +42,9 @@ p{
     color: rgb(176, 175, 175)
 }
 
+input{
+    margin-left: 1em;
+}
 
 #Employees{
     margin: 0 auto;
@@ -53,8 +56,11 @@ p{
     border: 2px solid rgb(232, 52, 52);
     border-radius: 5px;
 }
+#Employee_Modal div:last-child{
+    text-align: center;
+}
 #Employee_Modal div:first-child,
-#Employee_Modal {
+#Employee_Modal, main span{
     align-items: center;
 }
 #Employee_Modal{
@@ -67,13 +73,21 @@ p{
 #Employee_Modal div:first-child > div{
     margin-top: auto;
 }
+#Employee_Modal div:first-child span{
+    margin: 0 0 .5em 0 !important;
+    align-self: flex-end;
+}
 #Employee_Modal div:first-child{
     background: white;
     opacity: 1 !important;
-    padding: .5em 0 1em 0;
-    width: 17em;
+    padding: .5em .5em 1.5em .5em;
+    width: 20em;
     height: 18em;
     z-index: 999;
+}
+#Employee_Modal div:last-child p {
+    font-size: .65em;
+    margin: .25em 0;
 }
 #Employee_Modal img{
     width: 6em;
@@ -116,4 +130,8 @@ p{
     height: 100%;
     background: gray;
     opacity: .7;
+}
+
+.switchBtn{
+    background: rgb(176, 175, 175) !important;
 }
